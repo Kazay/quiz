@@ -5,83 +5,119 @@
 	<title>Czaja Kevin, junior web developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./templates/css/style.css">
 </head>
 <body>
-    <main>
-        <h1>Quiz 2 Furious</h1>
-        <section class="questionnaire">
-          <form action="./script.php">
-            <div class="block__question--style">
-              <h3>Q1: En quelle année est sorti le premier Fast and Furious ?</h3>
-              <input type="radio" id="q1r1" name="q1" value="1999">
-              <label for="q1r1">1999</label>
-              <input type="radio" id="q1r2" name="q1" value="2001">
-              <label for="q1r2">2001</label>
-              <input type="radio" id="q1r3" name="q1" value="2004">
-              <label for="q1r3">2003</label>
-              <input type="radio" id="q1r4" name="q1" value="2007">
-              <label for="q1r4">2005</label>
-            </div>
+	<main>
+		<div class="container jumbotron">
+			<h1>Quiz 2 Furious</h1>
+		</div>
+		<section class="container">
+			<form action="./script.php">
 
-            <div class="block__question--style">
-              <h3>Q2 : Combien de films compte la franchise ?</h3>
-              <input type="number" name="q2" placeholder="reponse" required>
-            </div>
+				<h4><span class="badge badge-dark">Question 1</span> En quelle année est sorti le premier Fast and Furious ?</h4>
+				<div class="d-flex justify-content-around form-group mt-3 mb-4">
+					<label class="form-check-label" for="q1r1">
+						<input class="form-check-input" type="radio" id="q1r1" name="q1" value="1999">
+						1999
+					</label>
+					<label class="form-check-label" for="q1r2">
+						<input class="form-check-input" type="radio" id="q1r2" name="q1" value="2001">
+						2001
+					</label>
+					<label class="form-check-label" for="q1r3">
+						<input class="form-check-input" type="radio" id="q1r3" name="q1" value="2004">
+						2003
+					</label>
+					<label class="form-check-label" for="q1r4">
+						<input class="form-check-input" type="radio" id="q1r4" name="q1" value="2007">
+						2005
+					</label>
+				</div>
 
-            <div class="block__question--style">
-              <h3>Q3: Quelle est la boisson préférée de Toretto ?</h3>
-              <input type="radio" id="q3r1" name="q3" value="Cacolac">
-              <label for="q3r1">Cacolac</label>
-              <input type="radio" id="q3r2" name="q3" value="8-6">
-              <label for="q3r2">8-6</label>
-              <input type="radio" id="q3r3" name="q3" value="Corona">
-              <label for="q3r3">Corona</label>
-              <input type="radio" id="q3r4" name="q3" value="Bud Light">
-              <label for="q3r4">Bud Light</label>
-            </div>
+				<h4><span class="badge badge-dark">Question 2</span> Combien de films compte la franchise ?</h4>
+				<div class="form-group mt-3 mb-4">
+					<input class="form-control" type="number" name="q2" placeholder="reponse" required>
+				</div>
 
-            <div class="block__question--style">
-              <h3>Q4 : Quelle voiture conduit Brian au début de 2 Fast 2 Furious ?</h3>
-              <input type="radio" id="q4r1" name="q4" value="Nissan Skyline">
-              <label for="q4r1">Nissan Skyline</label>
-              <input type="radio" id="q4r2" name="q4" value="Renault Kangoo">
-              <label for="q4r2">Renault Kangoo</label>
-              <input type="radio" id="q4r3" name="q4" value="Honda s2000">
-              <label for="q4r3">Honda s2000</label>
-              <input type="radio" id="q4r4" name="q4" value="Renault Fuego">
-              <label for="q4r4">Renault Fuego</label>
-            </div>
+				<h4><span class="badge badge-dark">Question 3</span> Quelle est la boisson préférée de Toretto ?</h4>
+				<div class="d-flex justify-content-around form-check mt-3 mb-4">
+					<label class="form-check-label" for="q3r1">
+						<input class="form-check-input" type="radio" id="q3r1" name="q3" value="Cacolac">
+						Cacolac
+					</label>
+					<label class="form-check-label" for="q3r2">
+						<input class="form-check-input" type="radio" id="q3r2" name="q3" value="8-6">
+						8-6
+					</label>
+					<label class="form-check-label" for="q3r3">
+						<input class="form-check-input" type="radio" id="q3r3" name="q3" value="Corona">
+						Corona
+					</label>
+					<label class="form-check-label" for="q3r4">
+						<input class="form-check-input" type="radio" id="q3r4" name="q3" value="Bud Light">
+						Bud Light
+					</label>
+				</div>
 
-            <div class="block__question--style">
-              <h3>Q5 : Quel(s) rappeur(s) est/sont présent(s) dans la franchise ?</h3>
-              <input type="checkbox" id="q5r1" name="q5r1" value="Matt Houston">
-              <label for="q5r1">Matt Houston</label>
-              <input type="checkbox" id="q5r2" name="q5r2" value="Ja Rule">
-              <label for="q5r2">Ja Rule</label>
-              <input type="checkbox" id="q5r3" name="q5r3" value="Ludacris">
-              <label for="q5r3">Ludacris</label>
-              <input type="checkbox" id="q5r4" name="q5r4" value="50 Cent">
-              <label for="q5r4">50 Cent</label>
-            </div>
+				<h4><span class="badge badge-dark">Question 4</span> Quelle voiture conduit Brian au début de 2 Fast 2 Furious ?</h4>
+				<div class="d-flex justify-content-around form-check mt-3 mb-4">
+					<label class="mr-3 form-check-label" for="q4r1">
+						<input class="form-check-input" type="radio" id="q4r1" name="q4" value="Nissan Skyline">
+						Nissan Skyline
+					</label>
+					<label class="form-check-label" for="q4r2">
+						<input class="form-check-input" type="radio" id="q4r2" name="q4" value="Renault Kangoo">
+						Renault Kangoo
+					</label>
+					<label class="form-check-label" for="q4r3">
+						<input class="form-check-input" type="radio" id="q4r3" name="q4" value="Honda s2000">
+						Honda s2000
+					</label>
+					<label class="form-check-label" for="q4r4">
+						<input class="form-check-input" type="radio" id="q4r4" name="q4" value="Renault Fuego">
+						Renault Fuego
+					</label>
+				</div>
 
-            <div class="block__question--style">
-              <h3>Q10 : Quel est le pire Fast and Furious?</h3>
-              <select name="q10">
-                <option value="ff1">The Fast and the Furious</option>
-                <option value="ff2">2 Fast 2 Furious</option>
-                <option value="ff3">Fast and Furious: Tokyo Drift</option>
-                <option value="ff4">Fast & Furious</option>
-                <option value="ff5">Fast Five</option>
-                <option value="ff6">Fast & Furious 6</option>
-                <option value="ff7">Furious 7</option>
-                <option value="ff8">The Fate of the Furious</option>
-              </select>
-            </div>
+				<h4><span class="badge badge-dark">Question 5</span> Quel(s) rappeur(s) est/sont présent(s) dans la franchise ?</h4>
+				<div class="d-flex justify-content-around form-check mt-3 mb-4">
+					<label class="form-check-label" for="q5r1">
+						<input class="form-check-input" type="checkbox" id="q5r1" name="q5r1" value="Matt Houston">
+						Matt Houston
+					</label>
+					<label class="form-check-label" for="q5r2">
+						<input class="form-check-input" type="checkbox" id="q5r2" name="q5r2" value="Ja Rule">
+						Ja Rule
+					</label>
+					<label class="form-check-label" for="q5r3">
+						<input class="form-check-input" type="checkbox" id="q5r3" name="q5r3" value="Ludacris">
+						Ludacris
+					</label>
+					<label class="form-check-label" for="q5r4">
+						<input class="form-check-input" type="checkbox" id="q5r4" name="q5r4" value="50 Cent">
+						50 Cent
+					</label>
+				</div>
 
-            <input type="submit" value="Valider les réponses">
-          </form>
-        </section>
-    </main>
-  </body>
+				<h4><span class="badge badge-dark">Question 10</span> Quel est le pire Fast and Furious ?</h4>
+				<div class="form-check mt-3 mb-4">
+					<select class="form-control custom-select" name="q10">
+						<option value="ff1">The Fast and the Furious</option>
+						<option value="ff2">2 Fast 2 Furious</option>
+						<option value="ff3">Fast and Furious: Tokyo Drift</option>
+						<option value="ff4">Fast & Furious</option>
+						<option value="ff5">Fast Five</option>
+						<option value="ff6">Fast & Furious 6</option>
+						<option value="ff7">Furious 7</option>
+						<option value="ff8">The Fate of the Furious</option>
+					</select>
+				</div>
+
+				<input class="btn btn-primary"type="submit" value="Valider les réponses">
+			</form>
+		</section>
+	</main>
+</body>
 </html>

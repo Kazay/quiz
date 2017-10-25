@@ -1,5 +1,11 @@
 <?php
 
+/*
+// Start the session
+session_start();
+  $_SESSION["r1"] = "2001";
+*/
+
 $score = 0;
 
 //Teste la Q1
