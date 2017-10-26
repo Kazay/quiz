@@ -1,3 +1,25 @@
+body {
+  background-color: #E6E3E6;
+}
+
+.jumbotron {
+  background-color: #1A72A1;
+  box-shadow: 3px 2px 5px rgba(0,0,0,0.2);
+}
+
+  .lead {
+    color: #FCFCFC;
+  }
+
 h1 {
-  text-align: center;
+  color: #FCFCFC;
+}
+
+.reponse {
+  background-color: #BCD39B;
+}
+
+.score {
+  background-color: #FFAB63;
+  color: #FCFCFC;
 }
