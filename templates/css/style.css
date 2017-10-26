@@ -20,6 +20,16 @@ h1 {
 }
 
 .score {
-  background-color: #FFAB63;
+  background-color: #1A72A1;
   color: #FCFCFC;
+}
+
+.right {
+  padding: 2rem;
+  background-color: #BCD39B;
+}
+
+.wrong {
+  padding: 2rem;
+  background-color: #FF7A91;
 }

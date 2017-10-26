@@ -59,7 +59,7 @@ session_start();
 						2005
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r1style"]; ?>">
 					<?php
 					if(isset($_SESSION["r1"])) {
 						echo $_SESSION["r1"];
@@ -71,7 +71,7 @@ session_start();
 				<div class="form-group mt-3 mb-5">
 					<input class="form-control" type="number" name="q2" placeholder="reponse" required>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r2style"]; ?>">
 					<?php
 					if(isset($_SESSION["r2"])) {
 						echo $_SESSION["r2"];
@@ -98,7 +98,7 @@ session_start();
 						Bud Light
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r3style"]; ?>">
 					<?php
 					if(isset($_SESSION["r3"])) {
 						echo $_SESSION["r3"];
@@ -125,7 +125,7 @@ session_start();
 						Renault Fuego
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r4style"]; ?>">
 					<?php
 					if(isset($_SESSION["r4"])) {
 						echo $_SESSION["r4"];
@@ -152,7 +152,7 @@ session_start();
 						50 Cent
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r5style"]; ?>">
 					<?php
 					if(isset($_SESSION["r5"])) {
 						echo $_SESSION["r5"];
@@ -179,7 +179,7 @@ session_start();
 						Brésil
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r6style"]; ?>">
 					<?php
 					if(isset($_SESSION["r6"])) {
 						echo $_SESSION["r6"];
@@ -206,7 +206,7 @@ session_start();
 						Avion cargo
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r7style"]; ?>">
 					<?php
 					if(isset($_SESSION["r7"])) {
 						echo $_SESSION["r7"];
@@ -233,7 +233,7 @@ session_start();
 						Roman
 					</label>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r8style"]; ?>">
 					<?php
 					if(isset($_SESSION["r8"])) {
 						echo $_SESSION["r8"];
@@ -245,7 +245,7 @@ session_start();
 				<div class="form-group mt-3 mb-5">
 					<input class="form-control" type="number" name="q9" placeholder="reponse" required>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r9style"]; ?>">
 					<?php
 					if(isset($_SESSION["r9"])) {
 						echo $_SESSION["r9"];
@@ -266,7 +266,7 @@ session_start();
 						<option value="ff8">The Fate of the Furious</option>
 					</select>
 				</div>
-				<div class="container reponse rounded mb-3">
+				<div class="container rounded mb-3 <?php echo $_SESSION["r10style"]; ?>">
 					<?php
 					if(isset($_SESSION["r10"])) {
 						echo $_SESSION["r10"];
@@ -280,16 +280,10 @@ session_start();
 		</section>
 	</main>
 	<?php
-		unset($_SESSION["r1"]);
-		unset($_SESSION["r2"]);
-		unset($_SESSION["r3"]);
-		unset($_SESSION["r4"]);
-		unset($_SESSION["r5"]);
-		unset($_SESSION["r6"]);
-		unset($_SESSION["r7"]);
-		unset($_SESSION["r8"]);
-		unset($_SESSION["r9"]);
-		unset($_SESSION["r10"]);
+		for ($i = 1; $i < 11; $i++) {
+			unset($_SESSION["r$i"]);
+			unset($_SESSION["r$i" . "style"]);
+		}
 		unset($_SESSION["score"]);
 		unset($_SESSION["comment"]);
 	 ?>
